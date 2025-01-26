@@ -107,7 +107,7 @@ const cardsData: ProjectData[] = [
     title: 'MediHelp',
     image: Medihelp,
     link: 'https://',
-    category: ['Fullstack'],
+    category: ['Fullstack','Freelancing'],
     description:
       'This is a MERN stack application for medical representative and Doctors, where the Medical Representative can book appointment, display medicins, directly contact Doctor, Broucher Management for those heavy materials.',
     stack: [
