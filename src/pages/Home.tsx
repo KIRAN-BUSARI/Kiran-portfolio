@@ -7,7 +7,7 @@ import {
 } from 'react';
 import Hero from './Hero';
 import Cards from './Projects';
-import Aboutme from '../pages/Aboutme';
+// import Aboutme from '../pages/Aboutme';
 import SocialMedia from '../components/SocialMedia';
 import Achievements from './Achievements';
 const Home = forwardRef((_props, ref) => {
@@ -15,7 +15,7 @@ const Home = forwardRef((_props, ref) => {
 
   const heroRef = useRef(null);
   const cardsRef = useRef(null);
-  const aboutmeRef = useRef(null);
+  // const aboutmeRef = useRef(null);
   const achievementsRef = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -56,9 +56,9 @@ const Home = forwardRef((_props, ref) => {
       <div ref={achievementsRef}>
         <Achievements />
       </div>
-      <div ref={aboutmeRef}>
+      {/* <div ref={aboutmeRef}>
         <Aboutme />
-      </div>
+      </div> */}
       {showSocialMedia && (
         <div className="fixed right-0 top-[290px] z-20">
           <SocialMedia />

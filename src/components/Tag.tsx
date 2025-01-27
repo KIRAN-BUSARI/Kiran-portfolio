@@ -15,6 +15,9 @@ import {
   SiClerk,
   SiFirebase,
   SiCloudinary,
+  SiJavascript,
+  SiPrisma,
+  SiAuth0,
 } from 'react-icons/si';
 import { Badge } from './ui/badge';
 
@@ -48,7 +51,7 @@ const tags: Tag[] = [
   {
     name: 'nodejs',
     icon: SiNodedotjs,
-    color: '#339933',
+    color: '#3c873a',
   },
   {
     name: 'express',
@@ -100,6 +103,21 @@ const tags: Tag[] = [
     icon: SiCloudinary,
     color: '#0000FF',
   },
+  {
+    name: 'javascript',
+    icon: SiJavascript,
+    color: '#F7DF1E',
+  },
+  {
+    name: 'prisma',
+    icon: SiPrisma,
+    color: '#f1f1f1',
+  },
+  {
+    name: 'auth0',
+    icon: SiAuth0,
+    color: '#EB5424',
+  },
 ];
 
 interface TagProps {
@@ -116,9 +134,8 @@ const Tag = ({ names }: TagProps) => {
         return (
           <Badge
             key={tag.name}
-            variant="outline"
             className={cn('gap-1 font-medium transition-colors duration-200')}
-            style={{ backgroundColor: `${tag.color}20` }}
+            style={{ backgroundColor: `${tag.color}20`, color: `${tag.color}` }}
             aria-label={`Technology: ${tag.name}`}
           >
             <tag.icon

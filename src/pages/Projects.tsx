@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import Card from '../components/ZoomCard';
+import Card from '../components/projectCard';
 import Vastraa from '../assets/projects/vastraa.png';
 import Vaiu from '../assets/projects/vaiu.png';
 import Sanoopura from '../assets/projects/sanoopura.png';
@@ -21,24 +21,6 @@ interface ProjectData {
 
 const cardsData: ProjectData[] = [
   {
-    title: 'Vastraa',
-    image: Vastraa,
-    link: 'https://vastraa.in',
-    category: ['Freelancing', 'Frontend'],
-    description:
-      'Vastraa is an online platform offering a curated collection of stylish and high-quality clothing. It provides a seamless shopping experience with user-friendly navigation, secure payments, and efficient order management.',
-    stack: ['react', 'framer-motion', 'tailwindcss', 'typescript'],
-  },
-  {
-    title: 'Sanoopura',
-    image: Sanoopura,
-    link: 'https://sanoopura.vercel.app',
-    category: ['Freelancing', 'Frontend'],
-    description:
-      'Sanoopura Nrityalaya is a classical dance academy preserving and promoting traditional Indian dance. It offers training, workshops, and performances to nurture aspiring dancers and inspire cultural appreciation.',
-    stack: ['react', 'framer-motion', 'tailwindcss', 'typescript'],
-  },
-  {
     title: 'Vaiu',
     image: Vaiu,
     link: 'https://vaiu.in',
@@ -52,39 +34,6 @@ const cardsData: ProjectData[] = [
       'shadcn-ui',
       'typescript',
       'tailwindcss',
-    ],
-  },
-  {
-    title: 'Video Conferencing App',
-    image: VideoConference,
-    link: 'https://www.behance.net/gallery/124837177/Iconography-Favourite-Food-Icons',
-    category: ['Fullstack'],
-    description:
-      'This is a platform offering seamless virtual meetings. It supports scheduled meetings, recordings, screen sharing, and interactive tools for collaboration. The chat-to-PDF feature allows users to share notes and chat with it using AI.',
-    stack: [
-      'nextjs',
-      'firebase',
-      'tailwindcss',
-      'shadcnui',
-      'typescript',
-      'clerk',
-    ],
-  },
-  {
-    title: 'Knowly',
-    image: Knowly,
-    link: 'https://lms-seven-fawn.vercel.app',
-    category: ['Fullstack'],
-    description:
-      'Knowly is a Learning Management System (LMS) used to create, manage, and deliver educational content, featuring tools like code editor, chatbot, live classroom, and note taking. It streamlines online and in-person learning for institutions and organizations.',
-    stack: [
-      'react',
-      'mongodb',
-      'nodejs',
-      'express',
-      'typescript',
-      'tailwindcss',
-      'cloudinary',
     ],
   },
   {
@@ -104,20 +53,72 @@ const cardsData: ProjectData[] = [
     ],
   },
   {
+    title: 'Video Conferencing App',
+    image: VideoConference,
+    link: 'https://www.behance.net/gallery/124837177/Iconography-Favourite-Food-Icons',
+    category: ['Fullstack'],
+    description:
+      'This is a platform offering seamless virtual meetings. It supports scheduled meetings, recordings, screen sharing, and interactive tools for collaboration. The chat-to-PDF feature allows users to share notes and chat with it using AI.',
+    stack: [
+      'nextjs',
+      'firebase',
+      'tailwindcss',
+      'shadcnui',
+      'typescript',
+      'auth0',
+      'clerk',
+    ],
+  },
+  {
+    title: 'Knowly',
+    image: Knowly,
+    link: 'https://lms-seven-fawn.vercel.app',
+    category: ['Fullstack'],
+    description:
+      'Knowly is a Learning Management System (LMS) used to create, manage, and deliver educational content, featuring tools like code editor, chatbot, live classroom, and note taking. It streamlines online and in-person learning for institutions and organizations.',
+    stack: [
+      'mongodb',
+      'express',
+      'react',
+      'nodejs',
+      'javascript',
+      'tailwindcss',
+      'cloudinary',
+    ],
+  },
+  {
+    title: 'Vastraa',
+    image: Vastraa,
+    link: 'https://vastraa.in',
+    category: ['Freelancing', 'Frontend'],
+    description:
+      'Vastraa is an online platform offering a curated collection of stylish and high-quality clothing. It provides a seamless shopping experience with user-friendly navigation, secure payments, and efficient order management.',
+    stack: ['react', 'framer-motion', 'tailwindcss', 'typescript'],
+  },
+  {
+    title: 'Sanoopura',
+    image: Sanoopura,
+    link: 'https://sanoopura.vercel.app',
+    category: ['Freelancing', 'Frontend'],
+    description:
+      'Sanoopura Nrityalaya is a classical dance academy preserving and promoting traditional Indian dance. It offers training, workshops, and performances to nurture aspiring dancers and inspire cultural appreciation.',
+    stack: ['react', 'framer-motion', 'tailwindcss', 'typescript'],
+  },
+  {
     title: 'MediHelp',
     image: Medihelp,
     link: 'https://',
-    category: ['Fullstack','Freelancing'],
+    category: ['Fullstack', 'Freelancing'],
     description:
       'This is a MERN stack application for medical representative and Doctors, where the Medical Representative can book appointment, display medicins, directly contact Doctor, Broucher Management for those heavy materials.',
     stack: [
-      'react',
       'mongodb',
-      'nodejs',
       'express',
-      'shadcn-ui',
+      'react',
+      'nodejs',
+      'javascript',
       'tailwindcss',
-      'typescript',
+      'shadcn-ui',
       'cloudinary',
     ],
   },
@@ -139,9 +140,7 @@ const CardComponent: React.FC = () => {
     return cardsData.filter((card) => card.category.includes(filter));
   };
 
-  const sortedCards = getFilteredCards().sort((a, b) =>
-    a.title.localeCompare(b.title),
-  );
+  const sortedCards = getFilteredCards();
 
   const handleMouseEnter = () => {
     if (audioRef.current) {
@@ -168,8 +167,8 @@ const CardComponent: React.FC = () => {
           <p className="m-0 h-0 p-0 md:block lg:hidden">
             <br />
           </p>
-          meets pixel
-          <span className="text-secondary">.</span>
+          meets <span className="text-secondary">pixel</span>
+          <span>.</span>
         </h1>
       </div>
       <div className="grid grid-cols-3 items-center justify-center gap-2 pb-[40px] pt-[40px] sm:gap-4 lg:flex lg:justify-start">
@@ -198,7 +197,7 @@ const CardComponent: React.FC = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${
-            filter === 'Freelancing' ? 'bg-secondary' : ''
+            filter === 'Freelancing' ? 'bg-secondary text-gray-950' : ''
           }`}
         >
           Freelancing
@@ -215,6 +214,7 @@ const CardComponent: React.FC = () => {
         </button>
         <audio src={audio} ref={audioRef}></audio>
       </div>
+
       <div className="mb-16 grid gap-8 sm:grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-2">
         {sortedCards.map((card, index) => (
           <Card

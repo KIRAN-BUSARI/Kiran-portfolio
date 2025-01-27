@@ -29,7 +29,7 @@ body {
     /* Adjust this value to change the length */
     bottom: -4px;
     height: 3px;
-    background-color: hsl(45, 100%, 60%);
+    background-color: rgb(255, 204, 51);
     transform: scaleX(0);
     /* Initially invisible */
     transform-origin: bottom right;

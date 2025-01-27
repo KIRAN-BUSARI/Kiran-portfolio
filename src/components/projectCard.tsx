@@ -18,7 +18,7 @@ const ZoomCard = ({
   stacks,
 }: ZoomCardProps) => {
   return (
-    <article className="group overflow-hidden rounded bg-card shadow-sm transition-all duration-300 hover:shadow-md">
+    <article className="group overflow-hidden rounded bg-bg bg-card shadow-sm transition-all duration-300 hover:shadow-md">
       <figure className="overflow-hidden rounded-t-[4px]">
         <img
           src={image}
@@ -31,7 +31,7 @@ const ZoomCard = ({
         />
       </figure>
       <div className="flex flex-col space-y-2 p-4">
-        <h2 className="text-center text-lg font-medium tracking-tight lg:text-start">
+        <h2 className="text-center text-lg font-medium tracking-tight text-primary lg:text-start">
           {title}
         </h2>
         <p className="text-center text-sm text-muted-foreground lg:text-start">
