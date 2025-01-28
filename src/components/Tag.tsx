@@ -134,8 +134,11 @@ const Tag = ({ names }: TagProps) => {
         return (
           <Badge
             key={tag.name}
-            className={cn('gap-1 font-medium transition-colors duration-200')}
-            style={{ backgroundColor: `${tag.color}20`, color: `${tag.color}` }}
+            className={cn(
+              'gap-1 border-none font-medium transition-colors duration-200',
+            )}
+            variant={'outline'}
+            style={{ backgroundColor: `${tag.color}20`, color: `` }}
             aria-label={`Technology: ${tag.name}`}
           >
             <tag.icon
