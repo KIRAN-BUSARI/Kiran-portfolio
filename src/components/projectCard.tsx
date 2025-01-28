@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Tag from './Tag';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 interface ZoomCardProps {
   title: string;
@@ -36,9 +37,14 @@ const ZoomCard = ({
           />
         </figure>
         <div className="flex flex-col space-y-2 p-4">
-          <h2 className="text-center text-lg font-medium tracking-tight text-primary lg:text-start">
-            {title}
-          </h2>
+          <div className="flex justify-between">
+            <h2 className="text-center text-lg font-medium tracking-tight text-primary lg:text-start">
+              {title}
+            </h2>
+            <p>
+              <FaExternalLinkAlt size={20} />
+            </p>
+          </div>
           <p className="text-center text-sm text-muted-foreground lg:text-start">
             {description}
           </p>
