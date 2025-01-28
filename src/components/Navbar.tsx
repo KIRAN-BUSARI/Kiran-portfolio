@@ -10,16 +10,12 @@ const links = [
     link: '/',
   },
   {
-    name: 'about',
-    link: '#about',
+    name: 'projects',
+    link: '#projects',
   },
   {
     name: 'Achievements',
-    link: '#achievement',
-  },
-  {
-    name: 'projects',
-    link: '#projects',
+    link: '#achievements',
   },
   {
     name: 'contact',

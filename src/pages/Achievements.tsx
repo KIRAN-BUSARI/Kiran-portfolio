@@ -33,16 +33,16 @@ const achievements: Achievement[] = [
     year: '2024',
     title: 'HACKB-24 2.0 Hackathon - 1st Place',
     description:
-      'Created a Video Conferencing Application using Next.js, TypeScript, and PostgreSQL. Implemented innovative Chat-to-PDF feature using Generative AI at BITM Ballari State Level Inter-college Hackathon.',
+      'Created a Video Conferencing Application using Next.js, TypeScript, and PostgreSQL. Implemented innovative Chat-with -PDF feature using Generative AI at BITM Ballari State Level Inter-college Hackathon.',
     category: 'award',
   },
 ];
 
 const Achievements = () => {
   return (
-    <div className="min-h-auto w-full text-primary" id="achievements">
+    <div className="min-h-auto w-full pt-28 text-primary" id="achievements">
       <div className="mb-12">
-        <h1 className="text-4xl font-medium tracking-wide">
+        <h1 className="text-5xl font-medium tracking-wide">
           Achievements
           <span className="text-secondary">.</span>
         </h1>

@@ -58,7 +58,7 @@ const cardsData: ProjectData[] = [
     link: 'https://www.behance.net/gallery/124837177/Iconography-Favourite-Food-Icons',
     category: ['Fullstack'],
     description:
-      'This is a platform offering seamless virtual meetings. It supports scheduled meetings, recordings, screen sharing, and interactive tools for collaboration. The chat-to-PDF feature allows users to share notes and chat with it using AI.',
+      'This is a platform offering seamless virtual meetings. It supports scheduled meetings, recordings, screen sharing, and interactive tools for collaboration. The chat-with-PDF feature allows users to share notes and chat with it using AI.',
     stack: [
       'nextjs',
       'firebase',
