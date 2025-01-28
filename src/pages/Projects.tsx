@@ -39,7 +39,7 @@ const cardsData: ProjectData[] = [
   {
     title: 'Live Docs',
     image: Realtime,
-    link: 'https',
+    link: 'https://livedocs.vercel.app',
     category: ['Fullstack'],
     description:
       'This is FullStack SAAS project built for Real-time collaboration in docs, with a features like editing, viewing, and sharing documents. Live',
@@ -107,7 +107,7 @@ const cardsData: ProjectData[] = [
   {
     title: 'MediHelp',
     image: Medihelp,
-    link: 'https://',
+    link: 'https://medihelp.vercel.app',
     category: ['Fullstack', 'Freelancing'],
     description:
       'This is a MERN stack application for medical representative and Doctors, where the Medical Representative can book appointment, display medicins, directly contact Doctor, Broucher Management for those heavy materials.',
