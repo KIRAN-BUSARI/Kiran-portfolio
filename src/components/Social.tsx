@@ -18,12 +18,12 @@ const socialMediaLinks: SocialMediaLink[] = [
   },
   {
     platform: 'Instagram',
-    url: 'https://www.instagram.com/shashidharby.design/',
+    url: 'https://www.instagram.com//',
     icon: 'fab fa-instagram',
   },
   {
     platform: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/shashidharby/',
+    url: 'https://www.linkedin.com/in/kiran-kumar-busari/',
     icon: 'fab fa-linkedin-in',
   },
   {
