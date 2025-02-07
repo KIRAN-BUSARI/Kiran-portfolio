@@ -17,10 +17,10 @@ const links = [
     name: 'Achievements',
     link: '#achievements',
   },
-  {
-    name: 'contact',
-    link: '#contact',
-  },
+  // {
+  //   name: 'contact',
+  //   link: '#contact',
+  // },
 ];
 
 export default function Navbar() {
