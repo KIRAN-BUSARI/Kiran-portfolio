@@ -24,14 +24,14 @@ const achievements: Achievement[] = [
   },
   {
     year: '2024',
-    title: 'HACKB-24 Hackathon - 4th Place',
+    title: 'HACKB-24 36hrs Hackathon - 4th Place',
     description:
       'Built a Doctor Appointment System using MERN stack, featuring OpenCV-powered facial recognition for secure authentication.',
     category: 'award',
   },
   {
     year: '2024',
-    title: 'HACKB-24 2.0 Hackathon - 1st Place',
+    title: 'HACKB-24 2.0 24hrs Hackathon - 1st Place',
     description:
       'Created a Video Conferencing Application using Next.js, TypeScript, and PostgreSQL. Implemented innovative Chat-with -PDF feature using Generative AI at BITM Ballari State Level Inter-college Hackathon.',
     category: 'award',
