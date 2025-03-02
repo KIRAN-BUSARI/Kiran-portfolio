@@ -36,6 +36,12 @@ const achievements: Achievement[] = [
       'Created a Video Conferencing Application using Next.js, TypeScript, and PostgreSQL. Implemented innovative Chat-with -PDF feature using Generative AI at BITM Ballari State Level Inter-college Hackathon.',
     category: 'award',
   },
+  {
+    year: '2025',
+    title: 'AZ-900 Cretification',
+    description: 'Certified in Microsoft Azure Fundamentals.',
+    category: 'certification',
+  },
 ];
 
 const Achievements = () => {
@@ -49,7 +55,6 @@ const Achievements = () => {
       </div>
 
       <div className="relative">
-        {/* Vertical line */}
         <div className="absolute left-4 h-full w-0.5 bg-secondary md:left-1/2"></div>
 
         {achievements.map((achievement, index) => (
