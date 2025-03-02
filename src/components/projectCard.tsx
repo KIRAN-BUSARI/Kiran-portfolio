@@ -18,7 +18,7 @@ const ZoomCard = ({
   stacks,
 }: ZoomCardProps) => {
   return (
-    <article className="group container overflow-hidden rounded bg-bg bg-card shadow-sm transition-all duration-300 drop-shadow-md hover:shadow-2xl">
+    <article className="group container overflow-hidden rounded bg-bg bg-card shadow-sm transition-all duration-300 drop-shadow-md hover:drop-shadow-xl">
       <Link
         to={link}
         target="_blank"
