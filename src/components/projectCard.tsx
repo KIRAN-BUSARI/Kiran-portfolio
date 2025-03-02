@@ -18,7 +18,7 @@ const ZoomCard = ({
   stacks,
 }: ZoomCardProps) => {
   return (
-    <article className="group container overflow-hidden rounded bg-bg bg-card shadow-sm transition-all duration-300 drop-shadow-md hover:drop-shadow-xl">
+    <article className="group container overflow-hidden rounded bg-bg bg-card shadow-sm transition-all duration-300 drop-shadow-md hover:shadow-2xl">
       <Link
         to={link}
         target="_blank"
@@ -37,7 +37,6 @@ const ZoomCard = ({
           />
         </figure>
         <div className="flex flex-col space-y-2 p-4">
-          <p>Add Link preview for the project tech stacks</p>
           <div className="flex justify-between">
             <h2 className="text-center text-lg font-medium tracking-tight text-primary lg:text-start">
               {title}

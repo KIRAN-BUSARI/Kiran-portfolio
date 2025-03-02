@@ -10,6 +10,7 @@ import Cards from './Projects';
 // import Aboutme from '../pages/Aboutme';
 import SocialMedia from '../components/SocialMedia';
 import Achievements from './Achievements';
+import Contact from './Contact';
 const Home = forwardRef((_props, ref) => {
   const [showSocialMedia, setShowSocialMedia] = useState(false);
 
@@ -17,6 +18,8 @@ const Home = forwardRef((_props, ref) => {
   const cardsRef = useRef(null);
   // const aboutmeRef = useRef(null);
   const achievementsRef = useRef(null);
+  const contactRef = useRef(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -59,6 +62,9 @@ const Home = forwardRef((_props, ref) => {
       {/* <div ref={aboutmeRef}>
         <Aboutme />
       </div> */}
+      <div ref={contactRef}>
+        <Contact />
+      </div>
       {showSocialMedia && (
         <div className="fixed right-0 top-[290px] z-20">
           <SocialMedia />
