@@ -56,10 +56,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 w-full border-b border-gray-100 bg-bg px-2 font-madeTommy md:px-[200px]">
       <nav className="pb-5 pt-5">
         <div className="flex w-full flex-wrap items-center justify-between">
-          <a href="/" className="text-3xl font-medium uppercase">
-            <h1 className="text-[#5B5B5B]">
-              B<span className="text-secondary">K</span>
-            </h1>
+          <a href="/" className="">
+            <img src="/src/assets/logo.svg" alt="logo" />
           </a>
 
           <button
