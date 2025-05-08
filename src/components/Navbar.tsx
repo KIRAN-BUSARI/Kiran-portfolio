@@ -57,7 +57,7 @@ export default function Navbar() {
       <nav className="pb-5 pt-5">
         <div className="flex w-full flex-wrap items-center justify-between">
           <a href="/" className="">
-            <img src="/src/assets/logo.svg" alt="logo" />
+            <img src="/logo.svg" alt="logo" />
           </a>
 
           <button
