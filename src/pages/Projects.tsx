@@ -7,6 +7,7 @@ import VideoConference from '../assets/projects/VideoConference.png';
 import Knowly from '../assets/projects/Knowly.png';
 import Realtime from '../assets/projects/realtime.png';
 import Medihelp from '../assets/projects/medihelp.png';
+import Gaananritya from '../assets/projects/gaananritya.png';
 
 import audio from '/hover_audio_effect.mp3';
 
@@ -111,6 +112,23 @@ const cardsData: ProjectData[] = [
     category: ['Fullstack', 'Freelancing'],
     description:
       'This is a MERN stack application for medical representative and Doctors, where the Medical Representative can book appointment, display medicins, directly contact Doctor, Broucher Management for those heavy materials.',
+    stack: [
+      'mongodb',
+      'express',
+      'react',
+      'nodejs',
+      'javascript',
+      'tailwindcss',
+      'shadcn-ui',
+      'cloudinary',
+    ],
+  },
+  {
+    title: 'Gannanritya',
+    image: Gaananritya,
+    link: 'https://gaananrityaacademy.org',
+    category: ['MERN', 'Freelancing'],
+    description: 'This is a MERN stack application for a Dance academy',
     stack: [
       'mongodb',
       'express',
