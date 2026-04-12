@@ -147,13 +147,7 @@ const cardsData: ProjectData[] = [
     link: 'https://shivaleelaculturaltrust.com',
     category: ['NEXT.JS', 'Freelancing'],
     description: 'This is a NEXT.JS application for Shivalleela Cultural Trust',
-    stack: [
-      'nextjs',
-      'react',
-      'tailwindcss',
-      'shadcn-ui',
-      'typescript',
-    ],
+    stack: ['nextjs', 'react', 'tailwindcss', 'shadcn-ui', 'typescript'],
   },
 ];
 
@@ -209,8 +203,9 @@ const CardComponent: React.FC = () => {
           onClick={() => handleFilterChange('Frontend')}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${filter === 'Frontend' ? 'bg-secondary' : ''
-            }`}
+          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${
+            filter === 'Frontend' ? 'bg-secondary' : ''
+          }`}
         >
           Frontend
         </button>
@@ -218,8 +213,9 @@ const CardComponent: React.FC = () => {
           onClick={() => handleFilterChange('Fullstack')}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${filter === 'Fullstack' ? 'bg-secondary' : ''
-            }`}
+          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${
+            filter === 'Fullstack' ? 'bg-secondary' : ''
+          }`}
         >
           Fullstack
         </button>
@@ -227,8 +223,9 @@ const CardComponent: React.FC = () => {
           onClick={() => handleFilterChange('Freelancing')}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${filter === 'Freelancing' ? 'bg-secondary text-gray-950' : ''
-            }`}
+          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${
+            filter === 'Freelancing' ? 'bg-secondary text-gray-950' : ''
+          }`}
         >
           Freelancing
         </button>
@@ -236,8 +233,9 @@ const CardComponent: React.FC = () => {
           onClick={() => handleFilterChange('Archive')}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${filter === 'Archive' ? 'bg-secondary' : ''
-            }`}
+          className={`rounded-full border px-4 py-1 text-primary backdrop-blur-sm transition-all duration-300 hover:border-secondary sm:px-6 md:font-semibold lg:font-normal ${
+            filter === 'Archive' ? 'bg-secondary' : ''
+          }`}
         >
           Archive
         </button>
