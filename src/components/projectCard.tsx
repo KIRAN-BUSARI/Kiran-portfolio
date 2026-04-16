@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Tag from './Tag';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import LinkPreviewDemo from './link-preview-demo';
 
 interface ZoomCardProps {
   title: string;
@@ -8,6 +9,7 @@ interface ZoomCardProps {
   link: string;
   description: string;
   stacks: string[];
+  useLivePreview?: boolean;
 }
 
 const ZoomCard = ({
@@ -16,6 +18,7 @@ const ZoomCard = ({
   description,
   link,
   stacks,
+  useLivePreview = true,
 }: ZoomCardProps) => {
   return (
     <article className="group container overflow-hidden rounded bg-bg bg-card shadow-sm drop-shadow-md transition-all duration-300 hover:drop-shadow-xl">
@@ -25,15 +28,12 @@ const ZoomCard = ({
         rel="noopener noreferrer"
         aria-label={`View ${title} project`}
       >
-        <figure className="overflow-hidden rounded-t-[4px]">
-          <img
-            src={image}
-            alt={`Screenshot of ${title} project`}
-            loading="lazy"
-            onError={(e) => {
-              e.currentTarget.src = '/fallback-image.png';
-            }}
-            className="h-auto w-full transform object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+        <figure>
+          <LinkPreviewDemo
+            url={link}
+            title={title}
+            fallbackImageSrc={image}
+            useLivePreview={useLivePreview}
           />
         </figure>
         <div className="flex flex-col space-y-2 p-4">

@@ -16,6 +16,7 @@ interface ProjectData {
   title: string;
   image: string;
   link: string;
+  useLivePreview?: boolean;
   category: string[];
   description: string;
   stack: string[];
@@ -42,6 +43,7 @@ const cardsData: ProjectData[] = [
     title: 'Live Docs',
     image: Realtime,
     link: 'https://livedocs.vercel.app',
+    useLivePreview: false,
     category: ['Fullstack'],
     description:
       'This is FullStack SAAS project built for Real-time collaboration in docs, with a features like editing, viewing, and sharing documents. Live',
@@ -58,6 +60,7 @@ const cardsData: ProjectData[] = [
     title: 'Video Conferencing App',
     image: VideoConference,
     link: 'https://www.behance.net/gallery/124837177/Iconography-Favourite-Food-Icons',
+    useLivePreview: false,
     category: ['Fullstack'],
     description:
       'This is a platform offering seamless virtual meetings. It supports scheduled meetings, recordings, screen sharing, and interactive tools for collaboration. The chat-with-PDF feature allows users to share notes and chat with it using AI.',
@@ -75,6 +78,7 @@ const cardsData: ProjectData[] = [
     title: 'Knowly',
     image: Knowly,
     link: 'https://lms-seven-fawn.vercel.app',
+    useLivePreview: false,
     category: ['Fullstack'],
     description:
       'Knowly is a Learning Management System (LMS) used to create, manage, and deliver educational content, featuring tools like code editor, chatbot, live classroom, and note taking. It streamlines online and in-person learning for institutions and organizations.',
@@ -101,6 +105,7 @@ const cardsData: ProjectData[] = [
     title: 'Sanoopura',
     image: Sanoopura,
     link: 'https://sanoopura.vercel.app',
+    useLivePreview: false,
     category: ['Freelancing', 'Frontend'],
     description:
       'Sanoopura Nrityalaya is a classical dance academy preserving and promoting traditional Indian dance. It offers training, workshops, and performances to nurture aspiring dancers and inspire cultural appreciation.',
@@ -110,6 +115,7 @@ const cardsData: ProjectData[] = [
     title: 'MediHelp',
     image: Medihelp,
     link: 'https://medihelp.vercel.app',
+    useLivePreview: false,
     category: ['Fullstack', 'Freelancing'],
     description:
       'This is a MERN stack application for medical representative and Doctors, where the Medical Representative can book appointment, display medicins, directly contact Doctor, Broucher Management for those heavy materials.',
@@ -249,6 +255,7 @@ const CardComponent: React.FC = () => {
             title={card.title}
             image={card.image}
             link={card.link}
+            useLivePreview={card.useLivePreview}
             stacks={card.stack}
             description={card.description}
           />
