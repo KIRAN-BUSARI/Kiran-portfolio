@@ -1,4 +1,4 @@
-import { encode } from "qss";
+import { encode } from 'qss';
 
 interface LinkPreviewDemoProps {
   url: string;
@@ -17,12 +17,12 @@ const LinkPreviewDemo = ({
     url,
     screenshot: true,
     meta: false,
-    embed: "screenshot.url",
-    colorScheme: "dark",
-    "viewport.isMobile": false,
-    "viewport.deviceScaleFactor": 1,
-    "viewport.width": 1440,
-    "viewport.height": 900,
+    embed: 'screenshot.url',
+    colorScheme: 'dark',
+    'viewport.isMobile': false,
+    'viewport.deviceScaleFactor': 1,
+    'viewport.width': 1440,
+    'viewport.height': 900,
   });
 
   const previewSrc = `https://api.microlink.io/?${params}`;
@@ -35,7 +35,7 @@ const LinkPreviewDemo = ({
         alt={`Live preview of ${title}`}
         loading="lazy"
         onError={(e) => {
-          e.currentTarget.src = fallbackImageSrc || "/fallback-image.png";
+          e.currentTarget.src = fallbackImageSrc || '/fallback-image.png';
         }}
         className="h-auto w-full transform object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
